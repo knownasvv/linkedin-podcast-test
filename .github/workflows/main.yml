@@ -1,7 +1,8 @@
 name: Generate Podcast Feeds
+run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
 on: [push]
 jobs: 
-  build:
+  Build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
